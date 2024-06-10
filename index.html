@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title class="title">project of supersimple</title>
+    <link rel="stylesheet" href="project.css">
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+</head>
+
+<body>
+    <div class="header">
+        <!--
+            header element is here on the top of the project:
+            dividing the content is three columns using flex-row
+            there is position fixed, absolute, relative to put header
+            pictures-->
+        <div class="header-flex">
+            <div class="left-header">
+                <!-- left-top headers -->
+                <img src="icons/headers/threedash.svg" class="header-picture">
+                <img src="icons/headers/youtube-logo.svg" class="header-picture" id="youtubelogo">
+            </div>
+            <div class="center-header">
+                <!--middle headers-->
+                <input type="text" id="search" placeholder="Search">
+                <button id="search-button">
+                    <img src="icons/headers/search.svg" class="header-picture" id="search-image">
+                    <div class="tooltip">search</div>
+                </button>
+                <a href="https://mekaneschool.github.io/mekaneschool2/">
+                    <button id="voice-search">
+                        <img src="icons/headers/voice-search.svg" class="header-picture">
+                        <div class="tooltip">voice search</div>
+                    </button>
+                </a>
+            </div>
+            <div class="right-header">
+                <!--right-top headers-->
+                <div class="right-header-absolute">
+                    <div class="signs">
+                        <img src="icons/headers/upload.svg" class="header-picture">
+                        <div class="tooltip">upload</div>
+                    </div>
+                    <div class="signs">
+                        <img src="icons/headers/youtube-apps.svg" class="header-picture">
+                        <div class="tooltip">youtube app</div>
+                    </div>
+                    <div class="notification">
+                        <img src="icons/headers/notifications.svg" id="notify" class="header-picture">
+                        <div class="notification-count">3</div>
+                        <div class="tooltip">notification</div>
+                    </div>
+                    <div class="signs">
+                        <img src="photos/images/sura.jpg" class="header-picture" id="my-profile">
+                        <div class="tooltip">profile picture</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <!--here is sidbare below the header and on the leftside of 
+            the web page with flex-column to arange the picture in logical
+            order, posion:fixed,relative and absolute-->
+        <div class="sidebar-flex">
+            <div class="sidebar-element">
+                <img src="icons/sidbars/home.svg" class="sidebar-picture">
+                <div class="meaning-sidebar">Home</div>
+            </div>
+            <div class="sidebar-element">
+                <img src="icons/sidbars/explore.svg" class="sidebar-picture">
+                <div class="meaning-sidebar">Explore</div>
+            </div>
+            <div class="sidebar-element">
+                <img src="icons/sidbars/subscriptions.svg" class="sidebar-picture">
+                <div class="meaning-sidebar">Subscriptions</div>
+            </div>
+            <div class="sidebar-element">
+                <img src="icons/sidbars/originals.svg" class="sidebar-picture">
+                <div class="meaning-sidebar">Orginal</div>
+            </div>
+            <div class="sidebar-element">
+                <img src="icons/sidbars/youtube-music.svg" class="sidebar-picture">
+                <div class="meaning-sidebar">YoutubeMusic</div>
+            </div>
+            <div class="sidebar-element">
+                <img src="icons/sidbars/library.svg" class="sidebar-picture">
+                <div class="meaning-sidebar">Library</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-system">
+        <!--using grid is vetal to divid the element in tabular form
+            so as to align along side by side.
+            under this grid system:-
+                        - image
+                        - profile picture
+                        - some paragraph
+                        = with proper order and proper link
+        Tip: -use percentage measurment instead of px since it is more flexible.
+            -use advanced css styling method to make smaller content and
+            high performance.
+            -use multiple css file if one file is so huge and complex        
+        -->
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="photos/images/image1.jpg" class="video-image">
+                    </a>
+                    <div class="time">14:20</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="photos/profiles/picture1.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            Talking Tech and AI with
+                            Google CEO Sundar Pichail!
+                        </div>
+                        <div class="info-two">
+                            Marques Brownlee<br>
+                            3.4M views. 6 mounths ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                        <img src="photos/images/image2.webp" class="video-image">
+                    </a>
+                    <div class="time">16:10</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href="https://www.youtube.com/c/markiplier">
+                            <img src="photos/images/image2.webp" class="profile-picture" id="special-profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            Try Not to Laugh Challenge #9
+                        </div>
+                        <div class="info-two">
+                            markiplier <br>
+                            19M viewer . 4 years ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                        <img src="photos/images/image3.webp" class="video-image">
+                    </a>
+                    <div class="time">4:20</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href="https://www.youtube.com/user/SSSniperWolf">
+                            <img src="photos/profiles/picture3.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            Craz Tik Tok Taken Moment
+                            Brfore Disaster
+                        </div>
+                        <div class="info-two">
+                            SSSniper Woif<br>
+                            12M views .1 years ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                        <img src="photos/images/image4.webp" class="video-image">
+                    </a>
+                    <div class="time">21:20</div>
+                </div>
+            </div>
+            <div class="profile-flex">
+                <div class="profile-picture-flex">
+                    <a href="https://www.youtube.com/c/veritasium">
+                        <img src="photos/profiles/picture4.jpeg" class="profile-picture">
+                    </a>
+                </div>
+                <div class="profile-information">
+                    <div class="info-one">
+                        The simplest Math Problem No One Can Solve Collatz Conjecture
+                    </div>
+                    <div class="info-two">
+                        Veritasium<br>
+                        18M views . 4 year ago
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/c/CSDojo">
+                        <img src="photos/images/image5.webp" class="video-image">
+                    </a>
+                    <div class="time">48:20</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href="https://www.youtube.com/c/CSDojo">
+                            <img src="photos/profiles/picture5.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </div>
+                        <div class="info-two">
+                            CS Dojo <br>
+                            519K Views . 5 years ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">
+                        <img src="photos/images/image6.webp" class="video-image">
+                    </a>
+                    <div class="time">98:20</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">
+                            <img src="photos/profiles/picture6.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            Anything You Can Fit In The Circle I'll Pay For
+                        </div>
+                        <div class="info-two">
+                            MrBeast<br>
+                            141M Views . 1 years ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">
+                        <img src="photos/images/image7.webp" class="video-image">
+                    </a>
+                    <div class="time">23:20</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href=":https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">
+                            <img src="photos/profiles/picture7.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            Why Planes Don't Fly Over Tibet
+                        </div>
+                        <div class="info-two">
+                            Tech Vision <br>
+                            3.7M views . 10 mounths ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">
+                        <img src="photos/images/image8.webp" class="video-image">
+                    </a>
+                    <div class="time">45:00</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">
+                            <img src="photos/profiles/picture8.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            Inside The Worlds Biggest Passenger Plane
+                        </div>
+                        <div class="info-two">
+                            Tech Vision <br>
+                            3.7M views . 10 mounths ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS">
+                        <img src="photos/images/image9.webp" class="video-image" id="special-nine">
+                    </a>
+                    <div class="time">13:10</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS">
+                            <img src="photos/profiles/picture9.jpeg" class="profile-picture">
+                        </a>
+                        <div class="profile-information">
+                            <div class="info-one">
+                                The SECRET to SuperHuman
+                                STRENGTH
+                            </div>
+                            <div class="info-two">
+                                ThenX <br>
+                                20M views . 3 years ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/user/businessinsider">
+                        <img src="photos/images/image10.webp" class="video-image">
+                    </a>
+                    <div class="time">15:00</div>
+                </div>
+                <div class="profile-flex">
+                    <div cass="profile-picture-flex">
+                        <a href="https://www.youtube.com/user/businessinsider">
+                            <img src="photos/profiles/picture10.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            How The World's Largest Cruise Ship Makes 30.000 Meals Every Day
+                        </div>
+                        <div cass="info-two">
+                            Business Insider <br>
+                            14M views . 1 years ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div class="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/c/Destinationtips">
+                        <img src="photos/images/image11.webp" class="video-image">
+                    </a>
+                    <div class="time">00:20</div>
+                </div>
+                <div class="profile-flex">
+                    <div cass="profile-picture-flex">
+                        <a href="https://www.youtube.com/c/Destinationtips">
+                            <img src="photos/profiles/picture11.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div cass="info-one">
+                            Dubai's Crazy. some thing went wrong
+                        </div>
+                        <div class="info-two">
+                            Destination Tips<br>
+                            3M views . 1 year ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grids">
+            <div cass="inner-gird">
+                <div class="image-time">
+                    <a href="https://www.youtube.com/teded">
+                        <img src="photos/images/image12.webp" class="video-image">
+                    </a>
+                    <div class="time">56:20</div>
+                </div>
+                <div class="profile-flex">
+                    <div class="profile-picture-flex">
+                        <a href="https://www.youtube.com/teded">
+                            <img src="photos/profiles/picture12.jpeg" class="profile-picture">
+                        </a>
+                    </div>
+                    <div class="profile-information">
+                        <div class="info-one">
+                            The Would You like To Know?
+                            If You think As If You Are Elite, You Are Dull
+                        </div>
+                        <div class="info-two">
+                            12M views . 2. minute ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="other-website" background-image="photos/images/sura.jpg">
+        <div>
+            <p class="introduction"> Wel come to mechaneschool website! <br>
+                there is a lot of online education for high school student.
+                injoy with the learning of mekaneschool.com website
+            </p>
+        </div>
+        <div class="header-two">
+            <!--head bar here-->
+            <div>
+                <button class="other-button">Home</button>
+            </div>
+            <div>
+                <button class="other-button">Categorys</button>
+            </div>
+            <div>
+                <button class="other-button">Resourse</button>
+            </div>
+            <div>
+                <button class="other-button">About-Us</button>
+            </div>
+            <div>
+                <button class="other-button">Others</button>
+            </div>
+            <div>
+                <button class="other-button">Help</button>
+            </div>
+        </div>
+        <h4 id="register-info">please register on the following portal by providing the relevant information </h4>
+        <div class="registration">
+            <div class="first-register-info">
+                <h4>first information for registration</h4>
+                <div class="first-info-flex">
+                    <!--first information of registration-->
+                    <div class="first-label">
+                        <label for="fname">First Name:</label>
+                        <lebal for="lname">Last Name:</lebal>
+                        <label for="bdate">Birth Date:</label>
+                        <label for="school">School:</label>
+
+                    </div>
+                    <div class="first-input">
+                        <form>
+                            <input type="text" class="register" id="fname" placeholder="first name" required><br><br>
+                            <input type="text" class="register" id="lname" placeholder="last name" required><br><br>
+                            <input type="date" class="register" id="bdate" placehoder="12-23-2023" required><br><br>
+                            <select id="school">
+                                <option>School of Electrical Engineering</option>
+                                <option>School of Mechanical Engineering</option>
+                                <option>School of Civil Engineering</option>
+                            </select><br><br>
+                        </form>
+                    </div>
+                </div>
+                <div class="second-info-flex">
+                    <!--second information of registration-->
+                </div>
+                
+            </div>
+            <div class="second-register-info">
+                <form>
+                    <h4>second information for registration</h4>
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" placeholder="09-74-26-37-15" min="10" max="10"><br><br>
+                    <label for="country">Country:</label>
+                    <select id="country">
+                        <option>Ethiopia</option>
+                        <option>Egypt</option>
+                        <option>Kenya</option>
+                        <option>Sudan</option>
+                        <option>Somaliya</option>
+                        <option>Ertira</option>
+                        <option>Djibuti</option>
+                    </select><br><br>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" placeholder="age" min="12" max="75"><br><br>
+                    <label for="section">Section:</label>
+                    <input type="text" id="section" required><br><br>
+                    <button id="submit-registration">Register</button>
+                    <button id="later">Register Later</button>
+                    <button id="cancel">Cancel</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="time-managment-system">
+            <div>
+                <table class="time-table">
+                    <tr>
+                        <th>no</th>
+                        <th>monday</th>
+                        <th>tuesday</th>
+                        <th>wendsday</th>
+                        <th>thursday</th>
+                        <th>friday</th>
+                        <th>saterday</th>
+                        <th>sunday</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>something</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div>
+                some text about time managment of second year first-semister
+            </div>
+        </div>
+    </div>
+    <div class="crativity">
+        Unleash Your Creative Genius: Unlock the full potential of your creativity, turning innovative ideas into
+        groundbreaking projects that captivate and inspire.<br>
+        Master the Art of Adaptation: Gain the skills to fluidly navigate the ever-evolving landscape of technology and
+        business, turning challenges into opportunities for growth and innovation.<br>
+        Transform Ideas into Impact: Learn how to convert abstract concepts into tangible, impactful products or
+        services that resonate in the market.<br>
+        Develop a Future-Proof Mindset: Cultivate an adaptable, resilient mindset that prepares you not just for the
+        present challenges but also for future advancements and shifts in your field.<br>
+        Build a Strong Personal Brand: Establish a compelling personal brand that showcases your unique talents and
+        visions, making you a sought-after name in your industry.<br>
+        Harness the Power of Networking: Create a robust network of collaborators, mentors, and supporters that
+        accelerates your path to success and opens doors to new opportunities.<br>
+        Achieve Professional Excellence: Attain a high level of proficiency and expertise in your chosen field,
+        positioning yourself as a leading figure and an authority.<br>
+        Live Your Passion: Transform your passion into a rewarding career, ensuring that every day of your professional
+        life is filled with purpose and enthusiasm.<br>
+        Foster Continuous Learning and Growth: Embrace a lifelong learning ethos, continually enhancing your skills and
+        knowledge to stay ahead of the curve.<br>
+        Create a Legacy of Innovation: Leave a mark in your field with contributions that not only define current trends
+        but also pave the way for future innovations.
+        By the end of this guide, you'll b
+    </div>
+</body>
+
+</html>
